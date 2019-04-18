@@ -1,0 +1,22 @@
+.status-box {
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 2px 0;
+    padding: 2px 4px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #019bd7;
+}
+
+.free {
+    background-color: #86c202;
+}
+
+.booked {
+    background-color: #c9011e;
+}

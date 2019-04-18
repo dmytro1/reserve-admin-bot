@@ -1,0 +1,25 @@
+<div class="gallery" id="gallery-{{ i }}">
+    <div class="gallery__hero">
+        {#<?php if ( ! Theme::is_mobile() ) : ?>#}
+        <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom">Zoom</a>
+        {#<?php endif; ?>#}
+        <img src="{{ post._thumbnail_id|apply_filters('get_theme_mod_image', '') }}">
+    </div>
+    <div class="gallery__thumbs">
+        {#<a href="<?= get_the_post_thumbnail_url() ?>"#}
+        <a href=""
+           data-gallery="thumb" class="is-active">
+            {#<img src="<?= get_the_post_thumbnail_url() ?>">#}
+            <img src="">
+        </a>
+        {#<?php $gallery = Product::get_gallery_images();#}
+		{#if ( $gallery ) :#}
+			{#foreach ( $gallery as $image ) : ?>#}
+        {#<a href="<?= wp_get_attachment_image_src( $image, 'full' )[0] ?>"#}
+           {#data-gallery="thumb">#}
+            {#<?= wp_get_attachment_image( $image, 'full' ) ?>#}
+        {#</a>#}
+        {#<?php endforeach; ?>#}
+        {#<?php endif; ?>#}
+    </div>
+</div>

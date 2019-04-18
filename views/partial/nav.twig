@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sandwich">
+						<span class="sw-topper"></span>
+						<span class="sw-bottom"></span>
+						<span class="sw-footer"></span>
+					</span>
+            </button>
+            <a class="navbar-brand" href=""><img src="{{ logo }}" class="logo img_resp" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+            <nav class="site-main-menu">
+                <ul class="nav navbar-nav navbar-right" data-responsive-menu="accordion medium-dropdown">
+                    {% for item in menu.items %}
+                        <li class="nav-main-item {{ item.classes|join(' ') }}">
+                            <a class="nav-main-link" href="{{ item.link }}">{{ item.title }}</a>
+                            {% if item.children %}
+                                <ul class="nav-drop">
+                                    {% for child in item.children %}
+                                        <li class="nav-drop-item">
+                                            <a href="{{ child.link }}">{{ child.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</nav>

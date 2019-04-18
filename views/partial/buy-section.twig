@@ -1,0 +1,26 @@
+<section id="buy" class="section" style="background-color: #eeeeee ">
+    <div class="container">
+        <div class="row text-center">
+
+            {% for post in products %}
+
+                <div class="col-md-4 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="{{ post._thumbnail_id|apply_filters('get_theme_mod_image', '') }}">
+                        <div class="caption">
+                            <h3>{{ post.post_title }}</h3>
+                            <p>Here will be excerpt</p>
+                            <p><span>{{ price_message }}</span>
+                            </p>
+                            <a onclick="App.toggleChooseSections(this)" href="#choose"
+                               class="btn model scroll_btn" type="button"
+                               data-id="{{ post.ID }}">CHOOSE</a>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

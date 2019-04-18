@@ -1,0 +1,44 @@
+<section id="choose">
+    <a class="close-btn scroll_btn" href="#buy">
+        <img src="{{ site.theme.uri }}/assets/built/images/close.png" class="img_responsive">
+    </a>
+    <div class="container-fluid">
+        <div class="row">
+
+            {% set i = 1 %}
+
+            {% for post in products %}
+
+            <div class="collapse-section" id="section-{{ post.ID }}">
+                <div id="carousel-{{ i }}" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" style="color: #000;">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ol> <!-- Wrapper for slides -->
+                    <div class="container">
+                        <div class="carousel-inner" style="">
+                            {% include 'partial/choose/slide-1.twig' %}
+                            {% include 'partial/choose/slide-2.twig' %}
+                            {% include 'partial/choose/slide-3.twig' %}
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-{{ i }}" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-{{ i }}" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            {% set i = i + 1 %}
+
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

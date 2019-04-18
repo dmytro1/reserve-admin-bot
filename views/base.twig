@@ -1,0 +1,16 @@
+{% include 'html-header.twig' %}
+<body {{ function('body_class') }} id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- LOADER -->
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+{% include 'partial/nav.twig' %}
+
+{% block content %}{% endblock %}
+
+{% block footer %}
+    {% include 'footer.twig' %}
+{% endblock %}
+</body>
+</html>

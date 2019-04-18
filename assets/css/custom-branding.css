@@ -1,0 +1,175 @@
+/*  Style Login page */
+body.login {
+	background: #f7f7f7;
+}
+
+body.login div#login {
+	padding: 6% 0 0;
+}
+
+body.login div#login h1 a {
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+
+body.login div#login h1 a:hover {
+	opacity: 0.5;
+}
+
+.login form {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
+}
+
+#backtoblog {
+	display: none;
+}
+
+.login#nav {
+	margin-left: 0;
+}
+
+#nav, #nav a {
+	/*display:     none;*/
+	color: #72777C !important;
+	text-shadow: none;
+	text-align: center;
+}
+
+.login #nav a:hover {
+	color: #4F88FF !important;
+	box-shadow: none;
+}
+
+.login #nav a:focus {
+	color: #4F88FF !important;
+	box-shadow: none;
+	border: none;
+	text-decoration: underline;
+}
+
+.wp-core-ui #wp-submit.button-primary {
+	background: #fff;
+	border: 2px solid #4F88FF;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #4F88FF;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: none;
+	/*font-size: 16px;*/
+	border-radius: 0;
+	min-width: 130px;
+	/*min-height: 48px;*/
+	/*padding: 10px 16px;*/
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.wp-core-ui .button-primary:hover {
+	opacity: 1 !important;
+	box-shadow: none !important;
+	border-color: #4F88FF;
+	background: #4F88FF !important;
+	color: #fff !important;
+	/*background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(79, 136, 255, 1) 0%, rgba(79, 136, 255, 1) 100%) repeat scroll 0 0 !important;*/
+}
+
+.wp-core-ui .button-primary:focus {
+	box-shadow: 0 1px 0 rgba(79, 136, 255, 0.6) inset, 0 0 0 1px #4F88FF, 0 0 2px 1px rgba(79, 136, 255, 0.8) !important;
+}
+
+#wp-submit {
+	color: #fff;
+	font-size: 14px;
+	font-family: "sourcesanspro-semibold-webfont", "Arial", sans-serif;
+}
+
+#user_login,
+#user_pass {
+	color: #212121;
+	font-family: "Arimo", sans-serif;
+	font-size: 16px;
+	border: 1px solid #ececec;
+	padding: 12px 16px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input[type="text"], input[type="password"] {
+	border: 1px solid #dcdcdc !important;
+	box-shadow: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="checkbox"]:focus {
+	border-color: #4F88FF !important;
+	box-shadow: 0 0 2px rgba(79, 136, 255, 0.8) !important;
+	-webkit-box-shadow: 0 0 2px rgba(79, 136, 255, 0.8) !important;
+}
+
+input[type="checkbox"]:checked:before {
+	content: "\f147";
+	margin: -3px 0 0 -4px;
+	color: #4F88FF !important;
+}
+
+.login label[for="user_login"] {
+	font-size: 0;
+}
+
+.login label[for="user_login"]:before {
+	font-size: 14px;
+	content: 'Email'
+}
+
+.login-action-login .wp-social-login-provider-list {
+	padding: 10px 0;
+}
+
+.wp-social-login-provider-list .wp-social-login-provider {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #cdd3d7;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	margin-right: 5px;
+	transition: 0.3s;
+
+}
+
+.wp-social-login-provider img {
+	display: none;
+}
+
+.wp-social-login-provider-facebook {
+	background-position: 49% 50%;
+	background-size: 17px auto;
+	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDQzMC4xMTMgNDMwLjExNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDMwLjExMyA0MzAuMTE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggaWQ9IkZhY2Vib29rIiBkPSJNMTU4LjA4MSw4My4zYzAsMTAuODM5LDAsNTkuMjE4LDAsNTkuMjE4aC00My4zODV2NzIuNDEyaDQzLjM4NXYyMTUuMTgzaDg5LjEyMlYyMTQuOTM2aDU5LjgwNSAgIGMwLDAsNS42MDEtMzQuNzIxLDguMzE2LTcyLjY4NWMtNy43ODQsMC02Ny43ODQsMC02Ny43ODQsMHMwLTQyLjEyNywwLTQ5LjUxMWMwLTcuNCw5LjcxNy0xNy4zNTQsMTkuMzIxLTE3LjM1NCAgIGM5LjU4NiwwLDI5LjgxOCwwLDQ4LjU1NywwYzAtOS44NTksMC00My45MjQsMC03NS4zODVjLTI1LjAxNiwwLTUzLjQ3NiwwLTY2LjAyMSwwQzE1NS44NzgtMC4wMDQsMTU4LjA4MSw3Mi40OCwxNTguMDgxLDgzLjN6IiBmaWxsPSIjY2RkM2Q3Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+
+.wp-social-login-provider-facebook:hover {
+	border-color: #3B5998;
+	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDQzMC4xMTMgNDMwLjExNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDMwLjExMyA0MzAuMTE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggaWQ9IkZhY2Vib29rIiBkPSJNMTU4LjA4MSw4My4zYzAsMTAuODM5LDAsNTkuMjE4LDAsNTkuMjE4aC00My4zODV2NzIuNDEyaDQzLjM4NXYyMTUuMTgzaDg5LjEyMlYyMTQuOTM2aDU5LjgwNSAgIGMwLDAsNS42MDEtMzQuNzIxLDguMzE2LTcyLjY4NWMtNy43ODQsMC02Ny43ODQsMC02Ny43ODQsMHMwLTQyLjEyNywwLTQ5LjUxMWMwLTcuNCw5LjcxNy0xNy4zNTQsMTkuMzIxLTE3LjM1NCAgIGM5LjU4NiwwLDI5LjgxOCwwLDQ4LjU1NywwYzAtOS44NTksMC00My45MjQsMC03NS4zODVjLTI1LjAxNiwwLTUzLjQ3NiwwLTY2LjAyMSwwQzE1NS44NzgtMC4wMDQsMTU4LjA4MSw3Mi40OCwxNTguMDgxLDgzLjN6IiBmaWxsPSIjM2I1OTk4Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+
+.wp-social-login-provider-google {
+	background-position: 56% 50%;
+	background-size: 21px auto;
+	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MS44NTggNDkxLjg1OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkxLjg1OCA0OTEuODU4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGQ9Ik0zNzcuNDcyLDIyNC45NTdIMjAxLjMxOXY1OC43MThIMzA4Ljc5Yy0xNi4wMzIsNTEuMDQ4LTYzLjcxNCw4OC4wNzctMTIwLjA1NSw4OC4wNzcgICAgIGMtNjkuNDkyLDAtMTI1LjgyMy01Ni4zMzUtMTI1LjgyMy0xMjUuODI0YzAtNjkuNDkyLDU2LjMzMy0xMjUuODIzLDEyNS44MjMtMTI1LjgyM2MzNC45OTQsMCw2Ni42NDUsMTQuMjg5LDg5LjQ1MiwzNy4zNDYgICAgIGw0Mi42MjItNDYuMzI4Yy0zNC4wNC0zMy4zNTUtODAuNjUtNTMuOTI5LTEzMi4wNzQtNTMuOTI5Qzg0LjUsNTcuMTkzLDAsMTQxLjY5MywwLDI0NS45MjhzODQuNSwxODguNzM3LDE4OC43MzYsMTg4LjczNyAgICAgYzkxLjMwNywwLDE3MS4yNDgtNjQuODQ0LDE4OC43MzctMTUwLjk4OXYtNTguNzE4TDM3Ny40NzIsMjI0Ljk1N0wzNzcuNDcyLDIyNC45NTd6IiBmaWxsPSIjY2RkM2Q3Ii8+CgkJCTxwb2x5Z29uIHBvaW50cz0iNDkxLjg1OCwyMjQuODU3IDQ1NS44MjcsMjI0Ljg1NyA0NTUuODI3LDE4OC44MjYgNDI0Ljk0MSwxODguODI2IDQyNC45NDEsMjI0Ljg1NyAzODguOTEsMjI0Ljg1NyAgICAgIDM4OC45MSwyNTUuNzQgNDI0Ljk0MSwyNTUuNzQgNDI0Ljk0MSwyOTEuNzcyIDQ1NS44MjcsMjkxLjc3MiA0NTUuODI3LDI1NS43NCA0OTEuODU4LDI1NS43NCAgICAiIGZpbGw9IiNjZGQzZDciLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+
+.wp-social-login-provider-google:hover {
+	border-color: #DC483C;
+	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MS44NTggNDkxLjg1OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkxLjg1OCA0OTEuODU4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGQ9Ik0zNzcuNDcyLDIyNC45NTdIMjAxLjMxOXY1OC43MThIMzA4Ljc5Yy0xNi4wMzIsNTEuMDQ4LTYzLjcxNCw4OC4wNzctMTIwLjA1NSw4OC4wNzcgICAgIGMtNjkuNDkyLDAtMTI1LjgyMy01Ni4zMzUtMTI1LjgyMy0xMjUuODI0YzAtNjkuNDkyLDU2LjMzMy0xMjUuODIzLDEyNS44MjMtMTI1LjgyM2MzNC45OTQsMCw2Ni42NDUsMTQuMjg5LDg5LjQ1MiwzNy4zNDYgICAgIGw0Mi42MjItNDYuMzI4Yy0zNC4wNC0zMy4zNTUtODAuNjUtNTMuOTI5LTEzMi4wNzQtNTMuOTI5Qzg0LjUsNTcuMTkzLDAsMTQxLjY5MywwLDI0NS45MjhzODQuNSwxODguNzM3LDE4OC43MzYsMTg4LjczNyAgICAgYzkxLjMwNywwLDE3MS4yNDgtNjQuODQ0LDE4OC43MzctMTUwLjk4OXYtNTguNzE4TDM3Ny40NzIsMjI0Ljk1N0wzNzcuNDcyLDIyNC45NTd6IiBmaWxsPSIjZGM0ODNjIi8+CgkJCTxwb2x5Z29uIHBvaW50cz0iNDkxLjg1OCwyMjQuODU3IDQ1NS44MjcsMjI0Ljg1NyA0NTUuODI3LDE4OC44MjYgNDI0Ljk0MSwxODguODI2IDQyNC45NDEsMjI0Ljg1NyAzODguOTEsMjI0Ljg1NyAgICAgIDM4OC45MSwyNTUuNzQgNDI0Ljk0MSwyNTUuNzQgNDI0Ljk0MSwyOTEuNzcyIDQ1NS44MjcsMjkxLjc3MiA0NTUuODI3LDI1NS43NCA0OTEuODU4LDI1NS43NCAgICAiIGZpbGw9IiNkYzQ4M2MiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+

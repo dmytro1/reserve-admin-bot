@@ -1,0 +1,34 @@
+<form action="#">
+
+    {% for input in form_inputs %}
+
+        <div class="form-group {{ input.width }}">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <span class="glyphicon {{ input.icon }}"></span>
+                </span>
+                <input
+                        type="{{ input.type }}"
+                        name="{{ input.name }}"
+                        class="form-control input-design"
+                        {% if input.type == 'text' %} minlength="3" {% endif %}
+                        placeholder="{{ input.placeholder }}"
+                        autocomplete="{{ input.name }}"
+                        required>
+            </div>
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <div class="help-block with-errors"></div>
+        </div>
+
+    {% endfor %}
+
+    <div class="form-group col-sm-12">
+        <button type="submit"
+                href="#carousel-{{ i }}"
+                onclick="App.addOrder(this)"
+                data-id="{{ post.ID }}"
+                name="{{ post.slug }}"
+                class="btn btn-primary" style="float: right">Order
+        </button>
+    </div>
+</form>

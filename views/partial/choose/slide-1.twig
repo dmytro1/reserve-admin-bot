@@ -1,0 +1,74 @@
+{#<?php $terms = Product::get_terms(); ?>#}
+
+<div class="item active">
+    <div class="row">
+        <div class="product-info">
+            <div class="col-md-6 product_img">
+                {% include 'partial/choose/gallery.twig' %}
+            </div>
+            <div class="col-md-6 product_content">
+                <h3>{{ post.post_title }}</h3>
+                <p>id:{{ post.ID }}</p>
+                <div class="rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    (rating)
+                </div>
+                {#<div class="price" data-price="<?= Product::output_price() ?>">#}
+                {#<?= Product::output_price_message() ?>#}
+                {#</div>#}
+                <div class="row">
+                    {#<?php if ( ! empty( Product::get_product_variations() ) ) : ?>#}
+                    {% if product_variations %}
+                        {% for term in product_terms %}
+                            {% if not term.slug == 'price' %}
+                                {#<?php foreach ( $terms as $term ) :#}
+                                {#if ( $term->slug === 'price' ) {#}
+                                {#continue;#}
+                                {#} ?>#}
+                                <div class="form-group col-sm-6 col-xs-6">
+                                    <select class="form-control input-design"
+                                            onchange="App.onChangeSelect(this)"
+                                            name="{{ term.slug }}"
+                                            data-id="{{ post.ID }}">
+                                        <option value="">- Select {{ term.name }} -</option>
+                                        {#<?php foreach ( $options = Product::get_options( {{ term.term_id }} ) as $option ) :#}
+                                        {#?>#}
+                                        {#<option#}
+                                        {#<?= Product::is_disabled( $option ) ?>#}
+                                        {#value="<?= strtolower( preg_replace( '/\s+/', '', $option ) ) ?>#}
+                                        {#"><?= trim( $option ) ?></option>#}
+                                        {#<?php endforeach; ?>#}
+                                    </select>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        {#<?php endforeach; ?>#}
+                    {% endif %}
+                    {#<?php endif; ?>#}
+                    {#<?php if ( ! empty( Product::get_product_variations() ) ) : ?>#}
+                    {% if product_variations %}
+                        <p class="error-message"></p>
+                    {% endif %}
+                    {#<?php endif; ?>#}
+                    <div class="form-group col-sm-6 col-xs-6">
+                        <label for="">Quantity</label>
+                        <input type="number" name="quantity" class="form-control quantity input-design"
+                               placeholder="Quantity" min="1" autocomplete="quantity" value="1" required>
+                    </div>
+                </div>
+                <button onclick="App.checkoutBtn(this)" data-id="{{ post.ID }}" class="btn btn-primary"
+                        href="#carousel-{{ i }}"
+                        data-slide="next"
+                        {#<?php if ( ! empty( Product::get_product_variations() ) ) {#}
+                        {% if product_variations %} disabled {% endif %}>Checkout
+                </button>
+                <br><br>
+                <div>{{ post.content }}</div>
+            </div>
+        </div>
+    </div>
+</div>

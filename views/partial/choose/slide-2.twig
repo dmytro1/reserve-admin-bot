@@ -1,0 +1,24 @@
+<div class="item">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-sm-6">
+                <img src="{{ post._thumbnail_id|apply_filters('get_theme_mod_image', '') }}"
+                     class="product-img img-responsive" style="max-height: 220px;">
+            </div>
+            <div class="col-sm-6">
+                <h3>{{ post.post_title }} id:{{ post.ID }}</h3>
+                <h3>Your choice is:</h3>
+                <div class="user-choice"></div>
+            </div>
+        </div>
+        <div class="col-md-6 personal-info">
+            <button class="btn btn-primary" href="#carousel-{{ i }}" data-slide="prev">Prev
+                Step
+            </button>
+            <div class="space-ten"></div>
+            <div class="row">
+                {% include 'partial/form.twig' %}
+            </div>
+        </div>
+    </div>
+</div>
