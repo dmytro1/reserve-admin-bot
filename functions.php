@@ -7,8 +7,8 @@
  */
 
 require_once __DIR__ . "/vendor/autoload.php";
-require_once __DIR__ . '/vendor/kirki/kirki.php';
-require_once __DIR__ . '/vendor/cmb2/init.php';
+require_once __DIR__ . '/wp-content/plugins/kirki/kirki.php';
+require_once __DIR__ . '/wp-content/plugins/cmb2/init.php';
 $loader = new \WPKit\Module\Loader();
 $loader->load_modules();
 new \Timber\Timber();
