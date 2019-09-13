@@ -66,13 +66,13 @@ class Connection {
 		$this->telegram = new Api( self::TOKEN );
 		$this->result   = $this->telegram->getWebhookUpdate();
 
-		$message            = $this->result->getMessage();
-		$this->chat_id      = $message->chat->id;
-		$this->first_name   = $message->from->firstName;
-		$this->last_name    = $message->from->lastName;
-		$this->username     = $message->from->username;
-		$this->text         = $message->text;
-		$this->phone_number = $message->contact->phoneNumber;
+		$message            = $this->result["message"];
+		$this->chat_id      = $message["chat"]["id"] ?? '';
+		$this->first_name   = $message["from"]["first_name"] ?? '';
+		$this->last_name    = $message["from"]["last_name"] ?? '';
+		$this->username     = $message["from"]["username"] ?? '';
+		$this->text         = $message["text"] ?? '';
+		$this->phone_number = $message["contact"]["phone_number"] ?? '';
 
 	}
 

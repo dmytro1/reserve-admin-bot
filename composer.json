@@ -2,7 +2,7 @@
   "require": {
     "redink-no/wpkit": "dev-develop",
     "mobiledetect/mobiledetectlib": "2.8.31",
-    "timber/timber": "2.x-dev",
+    "timber/timber": "dev-master",
     "aristath/kirki": "3.0.15",
     "webdevstudios/cmb2": "v2.4.2",
     "irazasyed/telegram-bot-sdk": "dev-develop"
