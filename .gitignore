@@ -2,3 +2,4 @@
 .idea
 .git
 /composer.lock
+/wp-content
